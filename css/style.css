@@ -1005,6 +1005,19 @@ h1, h2, h3 {
   gap: 24px;
 }
 
+/* Explore section: fixed 3-across so 6 cards always read as two even rows */
+.teaser-grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 860px) {
+  .teaser-grid-3 { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 560px) {
+  .teaser-grid-3 { grid-template-columns: 1fr; }
+}
+
 .teaser-card {
   background: var(--white);
   border-radius: var(--radius);
