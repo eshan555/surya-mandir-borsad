@@ -14,6 +14,23 @@ mainNav.querySelectorAll('a').forEach((link) => {
   });
 });
 
+// Hero close/reveal: let visitors hide the text card to see the full photo
+const heroContent = document.getElementById('heroContent');
+const heroClose = document.getElementById('heroClose');
+const heroReveal = document.getElementById('heroReveal');
+
+if (heroContent && heroClose && heroReveal) {
+  heroClose.addEventListener('click', () => {
+    heroContent.classList.add('is-dismissed');
+    heroReveal.classList.add('is-visible');
+  });
+
+  heroReveal.addEventListener('click', () => {
+    heroContent.classList.remove('is-dismissed');
+    heroReveal.classList.remove('is-visible');
+  });
+}
+
 // Highlight the nav link matching the current page
 const navLinks = document.querySelectorAll('.main-nav a');
 const currentPage = location.pathname.split('/').pop() || 'index.html';

@@ -225,6 +225,65 @@ h1, h2, h3 {
   border-radius: 32px;
   border: 1px solid rgba(212,175,55,0.3);
   box-shadow: 0 20px 60px rgba(20,4,4,0.35);
+  transition: opacity 0.35s ease, transform 0.35s ease, visibility 0.35s;
+}
+
+.hero-content.is-dismissed {
+  opacity: 0;
+  transform: scale(0.96);
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.hero-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid rgba(212,175,55,0.4);
+  background: rgba(0,0,0,0.15);
+  color: var(--gold-light);
+  font-size: 1.2rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.hero-close:hover {
+  background: rgba(0,0,0,0.3);
+  transform: scale(1.08);
+}
+
+.hero-reveal {
+  position: absolute;
+  top: 118px;
+  right: 24px;
+  z-index: 2;
+  display: none;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: rgba(40,8,8,0.55);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(212,175,55,0.4);
+  color: var(--gold-light);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.hero-reveal.is-visible { display: flex; }
+.hero-reveal:hover { background: rgba(40,8,8,0.72); }
+
+@media (max-width: 640px) {
+  .hero-reveal { top: 100px; right: 16px; font-size: 0.78rem; padding: 8px 14px; }
 }
 
 @media (max-width: 640px) {
