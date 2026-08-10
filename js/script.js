@@ -67,7 +67,7 @@ if ('IntersectionObserver' in window) {
   revealTargets.forEach((el) => el.classList.add('is-visible'));
 }
 
-// Gallery: fallback for missing images, plus lightbox
+// Gallery: fallback for missing images, plus lightbox (only on pages that have one)
 const galleryItems = document.querySelectorAll('.gallery-item');
 const lightbox = document.getElementById('lightbox');
 const lightboxImg = document.getElementById('lightboxImg');
@@ -81,25 +81,28 @@ galleryItems.forEach((item) => {
   }, { once: true });
 
   item.addEventListener('click', () => {
-    if (item.classList.contains('is-empty')) return;
+    if (item.classList.contains('is-empty') || !lightbox) return;
     lightboxImg.src = item.dataset.full;
     lightboxImg.alt = item.dataset.caption || '';
     lightbox.classList.add('is-open');
   });
 });
 
-const closeLightbox = () => {
-  lightbox.classList.remove('is-open');
-  lightboxImg.src = '';
-};
+if (lightbox && lightboxImg && lightboxClose) {
+  const closeLightbox = () => {
+    lightbox.classList.remove('is-open');
+    lightboxImg.src = '';
+  };
 
-lightboxClose.addEventListener('click', closeLightbox);
-lightbox.addEventListener('click', (e) => {
-  if (e.target === lightbox) closeLightbox();
-});
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') closeLightbox();
-});
+  lightboxClose.addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) closeLightbox();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeLightbox();
+  });
+}
 
 // Footer year
 document.getElementById('year').textContent = new Date().getFullYear();

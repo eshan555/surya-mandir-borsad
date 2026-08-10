@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://suntempleborsad.org/sitemap.xml

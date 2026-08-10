@@ -1192,6 +1192,36 @@ h1, h2, h3 {
   cursor: pointer;
 }
 
+/* ---------- FAQ ---------- */
+.faq-list {
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.faq-item {
+  background: var(--white);
+  border: 1px solid var(--gold-light);
+  border-radius: var(--radius);
+  padding: 22px 26px;
+  box-shadow: var(--shadow-soft);
+}
+
+.faq-item h3 {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 1.02rem;
+  color: var(--maroon);
+  margin: 0 0 8px;
+}
+
+.faq-item p {
+  margin: 0;
+  color: var(--ink);
+}
+
 /* ---------- Scroll reveal ---------- */
 .reveal {
   opacity: 0;
