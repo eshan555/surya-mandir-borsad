@@ -986,6 +986,57 @@ h1, h2, h3 {
 
 .seva-card p { margin: 0; color: var(--ink); font-size: 0.96rem; }
 
+/* ---------- Community / social engagement page ---------- */
+.event-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 30px;
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 28px;
+  box-shadow: var(--shadow-soft);
+  border-top: 4px solid var(--saffron);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.event-card-media { flex: 0 0 auto; margin: 0 auto; }
+
+.event-card-body { flex: 1 1 280px; min-width: 240px; }
+
+.event-date {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--saffron-dark);
+  background: var(--ivory-dark);
+  border: 1px solid var(--gold-light);
+  padding: 4px 14px;
+  border-radius: 999px;
+  margin-bottom: 12px;
+}
+
+.event-card-body h3 { font-size: 1.3rem; margin: 0 0 12px; }
+
+.event-card-body p { margin: 0 0 14px; color: var(--ink); }
+
+.event-watch-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  color: var(--saffron-dark);
+  text-decoration: none;
+}
+
+.event-watch-link:hover { text-decoration: underline; }
+
+@media (max-width: 560px) {
+  .event-card { padding: 22px 18px; }
+}
+
 /* ---------- Media / press page ---------- */
 .media-list {
   display: flex;
@@ -1144,6 +1195,27 @@ h1, h2, h3 {
 }
 
 .video-wrapper iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-wrapper-vertical {
+  position: relative;
+  width: 267px;
+  max-width: 100%;
+  margin: 0 auto;
+  aspect-ratio: 9 / 16;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-strong);
+  border: 3px solid var(--white);
+  outline: 1px solid var(--gold-light);
+}
+
+.video-wrapper-vertical iframe {
   position: absolute;
   inset: 0;
   width: 100%;
