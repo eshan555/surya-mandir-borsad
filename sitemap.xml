@@ -1,47 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://suntempleborsad.org/</loc>
+    <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://suntempleborsad.org/images/gallery-1.jpg</image:loc>
+      <image:title>Surya Mandir Borsad exterior</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://suntempleborsad.org/images/gallery-2.jpg</image:loc>
+      <image:title>Surya Mandir Borsad</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://suntempleborsad.org/images/gallery-3.jpg</image:loc>
+      <image:title>Surya Mandir Borsad</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://suntempleborsad.org/images/gallery-4.jpg</image:loc>
+      <image:title>Surya Mandir Borsad</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://suntempleborsad.org/history.html</loc>
+    <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://suntempleborsad.org/images/gallery-3.jpg</image:loc>
+      <image:title>Surya Narayan riding a chariot drawn by seven horses, above the temple entrance</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://suntempleborsad.org/timings.html</loc>
+    <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://suntempleborsad.org/gallery.html</loc>
+    <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://suntempleborsad.org/images/gallery-1.jpg</image:loc>
+      <image:title>Surya Mandir Borsad exterior, shikhara towers</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://suntempleborsad.org/images/gallery-2.jpg</image:loc>
+      <image:title>Surya Mandir Borsad front facade</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://suntempleborsad.org/images/gallery-3.jpg</image:loc>
+      <image:title>Carving of Surya Narayan riding a chariot drawn by seven horses, above the entrance</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://suntempleborsad.org/images/gallery-4.jpg</image:loc>
+      <image:title>Interior hall of Surya Mandir Borsad decorated with bunting</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://suntempleborsad.org/images/gallery-5.jpg</image:loc>
+      <image:title>Surya Mandir Borsad at sunset with birds in flight</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://suntempleborsad.org/images/gallery-6.jpg</image:loc>
+      <image:title>A yagya, fire ritual, in progress at the mandir</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://suntempleborsad.org/images/gallery-7.jpg</image:loc>
+      <image:title>Surya Mandir Borsad grounds with garden and fountain, wide view</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://suntempleborsad.org/images/gallery-8.jpg</image:loc>
+      <image:title>Colourful fountain with a Hanuman shrine in front of the temple</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://suntempleborsad.org/images/gallery-9.jpg</image:loc>
+      <image:title>Temple fountain illuminated with coloured lights at dusk</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://suntempleborsad.org/images/gallery-10.jpg</image:loc>
+      <image:title>Surya Mandir Borsad at sunrise with birds in flight</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://suntempleborsad.org/images/gallery-11.jpg</image:loc>
+      <image:title>Row of small subsidiary shrines within the temple complex</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://suntempleborsad.org/images/gallery-12.jpg</image:loc>
+      <image:title>Radha Krishna deity idols inside the temple</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://suntempleborsad.org/seva.html</loc>
+    <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://suntempleborsad.org/images/gallery-6.jpg</image:loc>
+      <image:title>A yagya (fire ritual) in progress at Surya Mandir Borsad, with a family offering ahuti</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://suntempleborsad.org/location.html</loc>
+    <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://suntempleborsad.org/media.html</loc>
+    <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://suntempleborsad.org/community.html</loc>
+    <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://suntempleborsad.org/contact.html</loc>
+    <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

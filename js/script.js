@@ -76,13 +76,25 @@ const lightboxClose = document.getElementById('lightboxClose');
 galleryItems.forEach((item) => {
   const img = item.querySelector('img');
 
+  // Fade each photo in when it has actually decoded, rather than when the tile
+  // scrolls into view — otherwise an empty tile animates in and the image pops.
+  const markLoaded = () => img.classList.add('is-loaded');
+  if (img.complete && img.naturalWidth > 0) {
+    markLoaded();
+  } else {
+    img.addEventListener('load', markLoaded, { once: true });
+  }
+
   img.addEventListener('error', () => {
     item.classList.add('is-empty');
+    markLoaded();
   }, { once: true });
 
   item.addEventListener('click', () => {
     if (item.classList.contains('is-empty') || !lightbox) return;
-    lightboxImg.src = item.dataset.full;
+    // Reuse the variant the tile already downloaded (WebP where supported), so
+    // opening a photo costs nothing extra. data-full is the JPEG fallback.
+    lightboxImg.src = img.currentSrc || item.dataset.full;
     lightboxImg.alt = item.dataset.caption || '';
     lightbox.classList.add('is-open');
   });
